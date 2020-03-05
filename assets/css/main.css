@@ -91,7 +91,7 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    /* font-size: 100%; */
     font: inherit;
     vertical-align: baseline;
 }
@@ -2689,7 +2689,7 @@ button:disabled,
 #header {
     padding: 9em 0 9em 0;
     background-color: #777;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.9);
     background-attachment: fixed, fixed, fixed;
     background-image: linear-gradient(45deg, #333 5%, #a44 35%, #ccc);
     background-position: top left, center center, center center;
@@ -2885,7 +2885,7 @@ body.is-preload #header:after {
     background-color: #4686a0;
     color: rgba(255, 255, 255, 0.75);
     background-attachment: fixed, fixed, fixed;
-    background-image: linear-gradient(45deg, #cff, #ccc 50%, #fcc 95%);
+    background-image: linear-gradient(45deg, #333 5%, #a44 35%, #ccc);
     background-position: top left, center center, center center;
     background-size: auto, cover, cover;
     text-align: center;
@@ -3012,7 +3012,7 @@ body.is-preload #header:after {
     input,
     select,
     textarea {
-        font-size: 14pt;
+        /* font-size: 14pt; */
         scroll-behavior: smooth;
     }
     /* Header */
@@ -3045,9 +3045,9 @@ body.is-preload #header:after {
         padding: 2em;
     }
     ul.major-icons li .icon {
-        height: 8em;
-        line-height: 8em;
-        width: 8em;
+        height: 4em;
+        line-height: 4em;
+        width: 4em;
     }
     /* Main */
     .main {
@@ -3066,7 +3066,7 @@ body.is-preload #header:after {
     }
     /* Footer */
     #footer {
-        padding: 4em 0 4em 0;
+        padding: 1.5em 0;
         background-attachment: scroll;
     }
 }
