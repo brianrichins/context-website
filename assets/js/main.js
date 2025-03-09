@@ -6,10 +6,15 @@
     $window.on('load', function() {
         window.setTimeout(function() {
             $body.removeClass('is-preload');
-        }, 100);
+        }, 10);
     });
 
-    // Scrolly
+    // Scrolly - smooth transition to clicked anchor tags
     $('.scrolly').scrolly();
-
 })(jQuery);
+
+// add toggle for the contact form section
+document.getElementById("toggleForm").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("contactForm").classList.toggle("open");
+});
