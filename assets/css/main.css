@@ -1677,9 +1677,10 @@ pre code {
 }
 /* Opened state */
 #contactForm.open {
-    max-height: 1200px;
+    max-height: 1170px;
     opacity: 1;
     display: block;
+    overflow-y: auto;
 }
 
 

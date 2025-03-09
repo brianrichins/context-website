@@ -14,14 +14,6 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RBM9XKZCN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0RBM9XKZCN');
-</script>
 
 <body class="is-preload">
     <section id="header" class="gradient-fill">
@@ -148,18 +140,18 @@
                     </a>
                 </li>
                 <li>
-                    <a id='toggleForm' href="#contactForm" class='button wide scrolly'>Submit a Project Request</a>
+                    <a id='toggleForm' href="#contactFormPlaceholder" class='button wide scrolly'>Submit a Project Request</a>
                 </li>
             </ul>
         </div>
-    </section>
-
-    <section id="contactForm" class="main style2 special">
+        
         <div class="container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScPoxufKHar36we9ULMcADOqKchuKJm4SvI3hojJ658W9HoRA/viewform?embedded=true" width="640" height="1191" frameborder="0" marginheight="0" marginwidth="0">Loading contact form…</iframe>
+            <span id="contactFormPlaceholder"></span>
+            <div>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScPoxufKHar36we9ULMcADOqKchuKJm4SvI3hojJ658W9HoRA/viewform?embedded=true" width="640" height="1250" frameborder="0" marginheight="0" marginwidth="0">Loading contact form…</iframe>
+            </div>
         </div>
     </section>
-
 
     <section id="footer" class="gradient-fill">
         <!-- <ul class="icons">
@@ -176,6 +168,14 @@
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/main.js"></script>
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RBM9XKZCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0RBM9XKZCN');
+    </script>
 </body>
 
 </html>
