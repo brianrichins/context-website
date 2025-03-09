@@ -144,11 +144,18 @@
             <ul class="actions special">
                 <li>
                     <a href="mailto:contact@contextengineering.net?subject=Request%20for%20Information" class="button wide" target="_blank">
-                        <span class="icon solid alt fa-envelope"> Contact Us</span>
+                        <span class="icon solid alt fa-envelope"> Email Us</span>
                     </a>
+                </li>
+                <li>
+                    <a id='toggleForm' class='button wide'>Submit a Project Request</a>
                 </li>
             </ul>
         </div>
+    </section>
+
+    <section id="contactForm" class="main style2 special">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScPoxufKHar36we9ULMcADOqKchuKJm4SvI3hojJ658W9HoRA/viewform?embedded=true" width="640" height="1191" frameborder="0" marginheight="0" marginwidth="0">Loading contact form…</iframe>
     </section>
 
 
@@ -160,12 +167,26 @@
             <li><a class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
             <li><a class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
         </ul> -->
-        &copy; 2025 Context Engineering, Utah
+        &copy; 2025 Context Engineering, Utah - <a href="mailto:contact@contextengineering.net?subject=Request%20for%20Information">contact@contextengineering.net</a>
     </section>
 
-    <script src="assets/js/jquery.min.js"></script>
+<!--     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script> -->
+    
+    <script>
+        document.getElementById("toggleForm").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            var formSection = document.getElementById("contactForm");
+        
+            if (formSection.classList.contains("open")) {
+                formSection.classList.remove("open");
+            } else {
+                setTimeout(() => formSection.classList.add("open"), 10); // Delay to trigger animation
+            }
+        });
+    </script>
+
 
 </body>
 
