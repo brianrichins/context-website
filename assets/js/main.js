@@ -10,11 +10,5 @@
     });
 
     // Scrolly - smooth transition to clicked anchor tags
-    $('.scrolly').scrolly();
+    $('.scrolly').scrolly({speed: 500});
 })(jQuery);
-
-// add toggle for the contact form section
-document.getElementById("toggleForm").addEventListener("click", function(event) {
-    event.preventDefault();
-    document.getElementById("contactForm").classList.toggle("open");
-});

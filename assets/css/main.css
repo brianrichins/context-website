@@ -1680,6 +1680,8 @@ pre code {
     max-height: 1170px;
     opacity: 1;
     display: block;
+}
+#contactForm iframe {
     overflow-y: auto;
 }
 
@@ -2682,10 +2684,10 @@ button:disabled,
 }
 
 #header .inner {
-    -moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
-    -webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
-    -ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
-    transition: transform 1.5s ease, opacity 2s ease;
+    -moz-transition: -moz-transform 0.75s ease, opacity 2s ease;
+    -webkit-transition: -webkit-transform 0.75s ease, opacity 2s ease;
+    -ms-transition: -ms-transform 0.75s ease, opacity 2s ease;
+    transition: transform 0.75s ease, opacity 2s ease;
     -moz-transition-delay: 0.25s;
     -webkit-transition-delay: 0.25s;
     -ms-transition-delay: 0.25s;
@@ -2700,14 +2702,14 @@ button:disabled,
 }
 
 #header .inner .actions {
-    -moz-transition: -moz-transform 1s ease;
-    -webkit-transition: -webkit-transform 1s ease;
-    -ms-transition: -ms-transform 1s ease;
-    transition: transform 1s ease;
-    -moz-transition-delay: 0.5s;
-    -webkit-transition-delay: 0.5s;
-    -ms-transition-delay: 0.5s;
-    transition-delay: 0.5s;
+    -moz-transition: -moz-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    -moz-transition-delay: 0.3s;
+    -webkit-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;
     -moz-transform: translateY(0);
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -2716,10 +2718,10 @@ button:disabled,
 }
 
 #header:after {
-    -moz-transition: opacity 1s ease;
-    -webkit-transition: opacity 1s ease;
-    -ms-transition: opacity 1s ease;
-    transition: opacity 1s ease;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
     background-image: linear-gradient(45deg, #ccc, #c22);
     content: '';
     height: 100%;
@@ -2760,6 +2762,31 @@ body.is-preload #header:after {
     background-position: top left, center center, center center;
     background-size: auto, cover, cover;
     text-align: center;
+}
+
+a.emailLink {
+    color: #9C0000;
+    position: relative;
+}
+a.emailLink:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        #9C000066 32%, /* contact@ */
+        #9C000066 85%, /* domain */
+        rgba(255, 255, 255, 0.5) 100% /* TLD */
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.5),
+        #9C000066
+    );
 }
 
 #footer h1,
