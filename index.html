@@ -14,14 +14,6 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RBM9XKZCN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0RBM9XKZCN');
-</script>
 
 <body class="is-preload">
     <section id="header" class="gradient-fill">
@@ -29,12 +21,19 @@
             <div><img src="images/logo.png" style="max-height:20vh" alt="Company logo" /></div>
 
             <h1>Context Engineering</h1>
-            <p>We work hard to understand your goals and constraints, and provide smart solutions that meet your needs for years to come.</p>
+            <p>We understand your goals and constraints, and deliver smart solutions that last.</p>
             <ul class="actions special">
                 <li><a href="#engineering" class="button scrolly">Civil Engineering</a></li>
                 <li><a href="#consulting" class="button scrolly">Technical Consulting</a></li>
                 <li><a href="#software" class="button scrolly">Custom Software</a></li>
             </ul>
+            <p>
+                <a
+                    class="emailLink"
+                    href="mailto:contact@contextengineering.net?subject=Request%20for%20Information">
+                    contact@contextengineering.net
+                </a>
+            </p>
         </div>
     </section>
 
@@ -144,29 +143,46 @@
             <ul class="actions special">
                 <li>
                     <a href="mailto:contact@contextengineering.net?subject=Request%20for%20Information" class="button wide" target="_blank">
-                        <span class="icon solid alt fa-envelope"> Contact Us</span>
+                        <span class="icon solid alt fa-envelope"> Email Us</span>
                     </a>
+                </li>
+                <li>
+                    <a id='toggleForm' href="#contactFormPlaceholder" class='button wide scrolly' onclick="document.getElementById('contactForm').classList.toggle('open');">Submit a Project Request</a>
                 </li>
             </ul>
         </div>
+        
+        <div class="container">
+            <span id="contactFormPlaceholder"></span>
+            <div id="contactForm" class="container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddhf-nRAvbrA_ENOcuJzzdDV1l4Q5ovyY-1yVonyyC3GqQgA/viewform?embedded=true" width="640" height="1250" frameborder="0" marginheight="0" marginwidth="0">Loading contact form…</iframe>
+            </div>
+        </div>
     </section>
 
-
     <section id="footer" class="gradient-fill">
-        <!-- <ul class="icons">
-            <li><a class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-            <li><a class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-        </ul> -->
-        &copy; 2025 Context Engineering, Utah
+        &copy; 2025 Context Engineering, Utah - 
+        <a
+            class="emailLink"
+            href="mailto:contact@contextengineering.net?subject=Request%20for%20Information">
+            contact
+            @
+            contextengineering.net
+        </a>
     </section>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/main.js"></script>
-
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RBM9XKZCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0RBM9XKZCN');
+    </script>
 </body>
 
 </html>
